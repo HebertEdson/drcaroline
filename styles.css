@@ -531,14 +531,14 @@ em { color: var(--blue-dark); font-style: italic; }
   .site-header { min-height: 76px; padding: 12px 22px; }
   .brand { width: 225px; }
   .brand-name { font-size: 30px; }
-  .hero { background-position: 60% center; }
+  .hero { padding-bottom: 82px; background-position: 60% center; }
   .hero-copy { padding: 52px 22px 6px; }
   h1 { font-size: 51px; }
   .hero-lead { font-size: 22px; margin-top: 7px; }
   .hero-description { margin-top: 17px; font-size: 13px; }
-  .hero-facts { gap: 12px; margin-top: 27px; }
-  .portrait-frame { height: 325px; bottom: -10px; margin-top: 0; }
-  .hero-portrait { object-position: 57% bottom; }
+  .hero-facts { position: absolute; z-index: 3; top: calc(100% + clamp(394px, 108vw, 460px)); left: 22px; right: 22px; justify-content: center; gap: 12px; margin-top: 0; }
+  .portrait-frame { right: auto; width: 100%; height: clamp(430px, 118vw, 510px); bottom: -18px; margin-top: -6px; }
+  .hero-portrait { object-position: center bottom; }
   .services { padding-top: 64px; }
   .service-card { border-radius: 13px; }
   .service-card h3 { font-size: 24px; }
